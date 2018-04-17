@@ -12,3 +12,9 @@ Driver de PHP para SQL Server:
 Conector ODBC para SQL Server:
 + https://www.microsoft.com/es-ES/download/details.aspx?id=36434
 
+Dependencias
+------------
++ Bootstrap
++ Jquery
++ Font Awesome
++ Popper
