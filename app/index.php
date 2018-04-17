@@ -1,21 +1,24 @@
+<!DOCTYPE html>
+<?php
+session_start();
+if (!isset($_SESSION['sqlOpenCommunityUsername'])){
+    header('Location: login.php');
+}
+?>
 <html>
     <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ejemplo login</title>
+	<title>Inicio</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/fontawesome-all.min.css"/>
         <link rel="stylesheet" href="css/styles.css"/>
     </head>
-    <body style="background-color: #932426;">
-        <div class="container">
-            <div class="account-wall">
-                <img class="profile-img" src="img/LOGO UGB.png" alt="">
-                <form action="procesos/validarUsuario.jsp" method="post" class="form-signin">
-                    <input name="user" id="user" type="text" class="form-control" placeholder="Usuario" required autofocus><br>
-                    <input name="pass" id="pass" type="password" class="form-control" placeholder="Contraseña" required><br>
-                    <button class="btn btn-lg btn-danger btn-block" type="submit">Ingresar</button>
-                </form>
-            </div>
-        </div>
+    <body>
+        <h1>Hola Mundo</h1><br>
+        <a href="logout.php">Cerrar Sesion</a>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
-<html>
+</html>
