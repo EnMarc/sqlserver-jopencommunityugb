@@ -4,10 +4,10 @@ Este proyecto pretende ejemplificar la integración de lenguajes y herramientas 
 
 ### Requerimientos para conectividad
 
-Driver de PHP para SQL Server:
+Drivers de PHP para SQL Server:
 + https://www.microsoft.com/download/details.aspx?id=55642
 
-Conector ODBC para SQL Server:
+Driver ODBC para SQL Server:
 + https://www.microsoft.com/es-ES/download/details.aspx?id=36434
 
 ### Dependencias
