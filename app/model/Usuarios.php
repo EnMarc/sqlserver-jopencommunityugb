@@ -16,7 +16,7 @@ class Usuarios {
     
     public function validateUser(){
         $db = Database::conectar();
-        $db->setAttribute(PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stm = $db->prepare('validateUser :us, :ps');
         $stm->setFetchMode(PDO::FETCH_CLASS,'usuarios');
         $stm->execute(array('us'=> $this->username,'ps'=> $this->password));
